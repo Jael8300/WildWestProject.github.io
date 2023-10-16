@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 6</title>
+  <link href="C:\Users\there\WildWestProject\WildWest.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setLanguageOnLoad()">
+  <div id="outer">
+
+    <!--Language Toggle Button-->
+    <div id="language-toggle" style="text-align: right;">
+      <button onclick="toggleLanguage()">Switch to Chinese</button>
+    </div> 
+
+    <h1 class="lang en">Congratulations!</h1>
+    <h1 class="lang zh" style="display: none;">恭喜你！</h1>
+
+    <p class="lang en">This is where we tell them if they have compassion, wisdom or faith (resilience)</p>
+    <p class="lang zh" style="display: none;">这里是我们告诉他们是否具有同情心、智慧或信仰的地方。</p>
+
+    <div id="results">
+    <script src="C:\Users\there\WildWestProject\WildWestScript.js"></script>
+    <script>
+      window.addEventListener('load', function() {
+        showResults();
+      });
+    </script>
+    
+    </div>
+    <div class="learnmore">
+    <a class="lang en button" href="https://bwmonastery.org.sg/" target="_blank">Learn More</a>
+    <a class="lang zh button" style="display: none;" href="https://bwmonastery.org.sg/" target="_blank">了解更多</a>
+    </div>
+  </div>
+
+  <script src="C:\Users\there\WildWestProject\languageToggle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 3</title>  
+  <link href="C:\Users\there\WildWestProject\WildWest.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setLanguageOnLoad()">
+  <div id="outer">
+  
+    <!--Language Toggle Button-->
+    <div id="language-toggle" style="text-align: right;">
+      <button onclick="toggleLanguage()">Switch to Chinese</button>
+    </div> 
+
+    <h1 class="lang en">Question 2</h1>
+    <h1 class="lang zh" style="display: none;">第二题</h1>
+    <div class="image">
+      <img src="C:\Users\there\WildWestProject\Images\Q2.jpg" height="600px"/>
+    </div>
+
+    <section class="Q2"> <!--represents Question2-->
+      <div class="question">
+        <label class="lang en" for="radio">While exploring an alien planet, your team discovers a sentient being trapped in 
+          a high-tech energy field. In this futuristic scenario, which role resonates with you:</label>
+        <label class="lang zh" style="display: none;" for="radio"> 在探索外星行星时，你的团队发现了一个被困在高科技能量场中的有知
+          觉的生物。在这个未来的情景中，哪个角色与你产生共鸣：</label>
+        </div>
+      <br>
+      <div class="options">
+        <div class="option">
+          <input type="radio" class="question-radio" name="Q2" value="a" id="a">
+          <label class="lang en" for="a">  The astute scientist, analyzing advanced technology to comprehend and deactivate the 
+              energy field.</label>
+          <label class="lang zh" style="display: none;" for="a"> 作为聪明的科学家，分析先进技术以理解并停用能量场。</label>
+        </div>
+      <br>
+        <div class="option">
+          <input type="radio" class="question-radio" name="Q2" value="b" id="b">
+          <label class="lang en" for="b"> The empathetic diplomat, attempting to communicate with the extraterrestrial being and 
+              offer solace. </label>
+          <label class="lang zh" style="display: none;" for="b"> 作为富有同情心的外交家，试图与外星生物交流并提供安慰。</label>
+        </div>
+      <br>
+        <div class="option">
+          <input type="radio" class="question-radio" name="Q2" value="c" id="c">
+          <label class="lang en" for="c"> The steadfast space marine, gearing up to breach the energy field and rescue the captive
+              extraterrestrial.</label>
+          <label class="lang zh" style="display: none;" for="c"> 作为坚定的太空军士兵，准备好突破能量场并拯救被困的外星生物。</label>
+        </div>
+      </div>
+    </section>
+
+    <div class="submission">
+      <button class="lang en button" onclick="checkOption('Q2', 'file:///C:/Users/there/WildWestProject/WildWestPage4.html', 
+      {'a': 'Wisdom', 'b': 'Compassion', 'c': 'Faith'})">Next</button>
+      <button class="lang zh button" style="display: none;" onclick="checkOption('Q2', 'file:///C:/Users/there/WildWestProject/WildWestPage4.html', 
+      {'a': 'Wisdom', 'b': 'Compassion', 'c': 'Faith'})">下一步</button>
+      <script src="C:\Users\there\WildWestProject\WildWestScript.js"></script>
+    </div>
+    <script src="C:\Users\there\WildWestProject\languageToggle.js"></script>
+  </div>
+</body>
+</html>

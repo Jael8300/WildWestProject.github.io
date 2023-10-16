@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page 5</title>
+  <link href="C:\Users\there\WildWestProject\WildWest.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setLanguageOnLoad()">
+  <div id="outer">
+
+    <!--Language Toggle Button-->
+    <div id="language-toggle" style="text-align: right;">
+      <button onclick="toggleLanguage()">Switch to Chinese</button>
+    </div> 
+
+    <h1 class="lang en">Question 4</h1>
+    <h1 class="lang zh" style="display: none;">第四题</h1>
+    <div class="image">
+      <img src="C:\Users\there\WildWestProject\Images\Q4.jpg" height="600px"/>
+    </div>
+
+    <section class="Q4"> <!--represents Question4-->
+      <div class="question">
+        <label class="lang en" for="radio">When encountering a distressed creature in the forest, what would you be more 
+            inclined to do?</label>
+        <label class="lang zh" style="display: none;" for="radio"> 当在森林中遇到一只困扰的生物时，你更倾向于做什么：</label>
+      </div>
+      <br>
+      <div class="options">
+        <div class="option">
+          <input type="radio" class="question-radio" name="Q4" value="a" id="a">
+          <label class="lang en" for="a"> Seek wisdom from the depths of the woods on how best to assist.</label>
+          <label class="lang zh" style="display: none;" for="a"> 从森林的深处寻找智慧，以最好地提供帮助。</label>
+        </div>
+        <br>
+        <div class="option">
+          <input type="radio" class="question-radio" name="Q4" value="b" id="b">
+          <label class="lang en" for="b"> Extend a compassionate hand, providing comfort and support.</label>
+          <label class="lang zh" style="display: none;" for="b"> 伸出同情的手，提供安慰和支持。</label>
+        </div>
+        <br>
+        <div class="option">
+          <input type="radio" class="question-radio" name="Q4" value="c" id="c">
+          <label class="lang en" for="c">  Uphold your commitment to safeguard all living beings, taking decisive action to 
+              rescue the endangered creature.</label>
+          <label class="lang zh" style="display: none;" for="c"> 坚守对保护所有生命的承诺，采取果断行动拯救这只濒危的生物。</label>
+        </div>
+      </div>
+      </section>
+
+      <div class="submission">
+        <button class="lang en button" onclick="checkOption('Q4', 'file:///C:/Users/there/WildWestProject/WildWestPage6.html', 
+        {'a': 'Wisdom', 'b': 'Compassion', 'c': 'Faith'})">Next</button>
+        <button class="lang zh button" style="display: none;" onclick="checkOption('Q4', 'file:///C:/Users/there/WildWestProject/WildWestPage6.html', 
+        {'a': 'Wisdom', 'b': 'Compassion', 'c': 'Faith'})">下一步</button>
+        <script src="C:\Users\there\WildWestProject\WildWestScript.js"></script>
+      </div>
+      <script src="C:\Users\there\WildWestProject\languageToggle.js"></script>
+    </div>
+</body>
+</html>
