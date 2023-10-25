@@ -11,3 +11,5 @@ cd \directory\of\what\folder\you\chose i.e. 'cd C:\Users\there\WildWestProject'
 
 start WildWest.html
 
+
+This branch has more deity-information added to it.
