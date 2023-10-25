@@ -152,11 +152,72 @@ h1 {
     margin:30px;
   }
 
+  .deity-name{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .deity-info-box {
+    border: 10px solid rgb(235, 229, 222);
+    background-color: rgb(235, 229, 222);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px rgb(170, 166, 162);
+    font-size: 30px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .deity-image img{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px rgb(170, 166, 162);
+  }
+
+  .deity-text {
+    text-align: center;
+    margin: 20px;
+    font-size: 25px;    
+    font-family: Helvetica;
+    color:rgb(62, 39, 13);
+  }
+
   .learnmore{
     display: flex;
     justify-content: center;
     align-items: center;
     line-height: 50px;
     text-align: center;
+    margin: 30px;
   }
-  
+
+  .deity-card{
+    border: 10px solid rgb(235, 229, 222);
+    background-color: rgb(235, 229, 222);
+    box-shadow: 10px 10px 7px rgb(170, 166, 162);
+  }
+  .deity-card h2{
+    font-size: 35px;    
+    font-family: Helvetica;
+  }
+  .deity-card h3{
+    font-size: 30px;    
+    font-family: Helvetica;
+    color:rgb(62, 39, 13);
+  }
+  .deity-card h4{
+    font-size: 25px;    
+    font-family: Georgia;
+    color:rgb(62, 39, 13)
+  }
+  .deity-description{
+    font-size: 20px;    
+    font-family: Georgia;
+    color: black;
+  }

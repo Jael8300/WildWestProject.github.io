@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deity Choices</title>
+  <link href="./WildWest.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .deity-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .deity-card {
+      width: 300px;
+      margin: 15px;
+      /* border: 1px solid #ccc; */
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+    }
+    .deity-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .deity-description {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+    <!--Language Toggle Button-->
+    <div id="language-toggle" style="text-align: right;">
+        <button onclick="toggleLanguage()">Switch to Chinese</button>
+    </div>  
+
+  <h1 class="lang en">Deity Profiles</h1>
+  <h1 class="lang zh" style="display: none;">神明简介</h1>
+
+  <div class="deity-container">
+    <!-- Deity 1 -->
+    <div class="deity-card">
+        <h2 class="lang en">Bodhisattva of Compassion</h2>
+        <h2 class="lang zh" style="display: none;">慈悲的菩萨</h2>
+        <h3 class="lang en">Guanyin (Avalokiteśvara)</h3>
+        <h3 class="lang zh" style="display: none;">观音</h3>
+        <img class="deity-image" src="./Images/guanyin.jpg" alt="Deity 3">
+        <h4 class="lang en">Attributes:</h4>
+        <h4 class="lang zh" style="display: none;">属性:</h4>
+        <p class="deity-description lang en">
+            Compassion, mercy, kindness
+        </p>
+        <p class="deity-description lang zh" style="display: none;">
+            慈悲、仁慈、善良
+        </p>
+        <h4 class="lang en">Mantra:</h4>
+        <h4 class="lang zh" style="display: none;">咒语:</h4>
+        <p class="deity-description lang en">
+            Om Mani Padme Hum
+        </p>
+        <p class="deity-description lang zh" style="display: none;">
+            嗡嘛呢叭咪吽
+        </p>
+        <h4 class="lang en">Significance:</h4>
+        <h4 class="lang zh" style="display: none;">重要性:</h4>
+        <p class="deity-description lang en">
+            Guanyin is believed to hear the cries of all beings and to offer compassion and relief from suffering.
+        </p>
+        <p class="deity-description lang zh" style="display: none;">
+            观音被认为能听到所有生灵的呼喊，并提供慈悲和减轻痛苦。
+        </p>
+    </div>
+
+    <!-- Deity 2 -->
+    <div class="deity-card">
+        <h2 class="lang en">Bodhisattva of Wisdom</h2>
+        <h2 class="lang zh" style="display: none;">智慧的菩萨</h2>
+        <h3 class="lang en">Manjushri</h3>
+        <h3 class="lang zh" style="display: none;">文殊菩萨</h3>
+        <img class="deity-image" src="./Images/manjusri.jpg" alt="Deity 3">
+        <h4 class="lang en">Attributes:</h4>
+        <h4 class="lang zh" style="display: none;">属性:</h4>
+        <p class="deity-description lang en">
+            Wisdom, understanding, insight
+        </p>
+        <p class="deity-description lang zh" style="display: none;">
+            智慧、理解、洞察
+        </p>
+        <h4 class="lang en">Mantra:</h4>
+        <h4 class="lang zh" style="display: none;">咒语:</h4>
+        <p class="deity-description lang en">
+            Om A Ra Pa Ca Na Dhih
+        </p>
+        <p class="deity-description lang zh" style="display: none;">
+            嗡啊啦啪啊那底
+        </p>
+        <h4 class="lang en">Significance:</h4>
+        <h4 class="lang zh" style="display: none;">重要性:</h4>
+        <p class="deity-description lang en">
+            Manjushri is revered as the embodiment of the wisdom of all the Buddhas. He is often invoked for wisdom and clarity in understanding the Dharma (Buddhist teachings).
+        </p>
+        <p class="deity-description lang zh" style="display: none;">
+            文殊菩萨被尊崇为所有佛的智慧化身。他经常被祈求以获得理解佛法（佛教教义）的智慧和清晰度。
+        </p>
+    </div>
+
+    <!-- Deity 3 -->
+    <div class="deity-card">
+      <h2 class="lang en">Buddha of Infinite Light</h2>
+      <h2 class="lang zh" style="display: none;">无量光佛</h2>
+      <h3 class="lang en">Amitabha</h3>
+      <h3 class="lang zh" style="display: none;">阿弥陀佛</h3>
+      <img class="deity-image" src="./Images/amitabha.jpg" alt="Deity 3">
+      <h4 class="lang en">Attributes:</h4>
+      <h4 class="lang zh" style="display: none;">属性:</h4>
+      <p class="deity-description lang en">
+        Infinite light, infinite life, compassion
+      </p>
+      <p class="deity-description lang zh" style="display: none;">
+        无限的光、无限的生命、慈悲
+      </p>
+      <h4 class="lang en">Mantra:</h4>
+      <h4 class="lang zh" style="display: none;">咒语:</h4>
+      <p class="deity-description lang en">
+        Namo Amituofo (Chinese), Namo Amitābhāya (Sanskrit)
+      </p>
+      <p class="deity-description lang zh" style="display: none;">
+        南无阿弥陀佛(中文),Namo Amitābhāya(梵文)
+      </p>
+      <h4 class="lang en">Significance:</h4>
+      <h4 class="lang zh" style="display: none;">重要性:</h4>
+      <p class="deity-description lang en">
+        Central figure in Pure Land Buddhism. Believed to have created a Pure Land known as Sukhavati, where beings can be reborn through faith and devotion to Amitabha. The focus is often on Amitabha's compassion and the vow to save all sentient beings.
+      </p>
+      <p class="deity-description lang zh" style="display: none;">
+        净土宗的中心人物。被认为创造了一个名为极乐世界的净土，生灵通过对阿弥陀佛的信仰和虔诚可以在那里得到重生。重点通常放在阿弥陀佛的慈悲和拯救所有众生的誓愿上。
+      </p>
+    </div>
+    <!-- Add more deities as needed -->
+    <script src="./languageToggle.js"></script>
+  </div>
+
+</body>
+</html>
