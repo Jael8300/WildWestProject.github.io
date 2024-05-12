@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who's your guardian deity?</title>
-    <link href="./WildWest.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <title>Page 6</title>
+  <link href="./WildWest.css" rel="stylesheet">
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <script src="./WildWestScript.js"></script>
 </head>
 
-<body>
-<div id="outer">
+<body onload="setLanguageOnLoad()">
+  <div id="outer">
 
     <!--Language Toggle Button-->
     <div id="language-toggle" style="text-align: right;">
-        <button onclick="toggleLanguage()">Switch to Chinese</button>
-    </div>  
+      <button onclick="toggleLanguage()">Switch to Chinese</button>
+    </div> 
 
-    <!-- Script to automatically reset attributes -->
+    <h1 class="lang en" >Congratulations!</h1>
+    <h1 class="lang zh" style="display: none;">恭喜你！</h1>
+    <h1 id="name"></h1>
+
+    <div id="results">
     <script>
-        window.addEventListener('load', function() {
-            setLanguageOnLoad();
-            resetAttributes();
-        });
+      window.addEventListener('load', function() {
+        showResults();
+      });
     </script>
-
-    <h1 class="lang en">Who's your guardian deity?</h1>
-    <h1 class="lang zh" style="display: none;">你的守护神是谁？</h1>
-
-    <p class="lang en">This is where we can place additional information about this project
-        aka finding the goddess that suits them most</p>
-    <p class="lang zh" style="display: none;">这是我们可以放置有关这个项目的附加信息，即寻找最适合他们的神。</p>
-
-    <div class="start">
-    <button class="lang en button" onclick="window.location.href='file:./WildWestPage2.html'">Start</button>
-    <button class="lang zh button" style="display: none;" onclick="window.location.href='file:./WildWestPage2.html'">开始</button>        
-    <script src="./WildWestScript.js"></script>
     </div>
-    <script src="./languageToggle.js"></script>
-</div>
+    <div id="deity-info" class="deity-info-box"></div>
+    
+
+    <div class="learnmore">
+    <a class="lang en button" href="WildWestDeity.html" target="_blank">Learn More</a>
+    <a class="lang zh button" style="display: none;" href="WildWestDeity.html" target="_blank">了解更多</a>
+    </div>
+    
+    </div>
+    <div class="learnmore">
+    <a class="lang en button" href="https://bwmonastery.org.sg/" target="_blank">BW Monastery</a>
+    <a class="lang zh button" style="display: none;" href="https://bwmonastery.org.sg/" target="_blank">吉祥宝聚寺</a>
+    </div>
+  </div>
+
+  <script src="./languageToggle.js"></script>
+
 </body>
-
-
 </html>
